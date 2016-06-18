@@ -1,0 +1,36 @@
+.middle .now{
+	height:30px;
+	width:100%;
+	background: #109ef9;
+	color:#FFFFFF;
+	margin-bottom: 15px;
+}
+.middle .now span{
+	font-size:16px;
+	margin-left:30px;
+	line-height: 30px;
+}
+.middle .now .span_now b{
+	font-size:16px;
+}
+.middle .now .span_now a{
+	font-size:16px;
+	color:#FFF;
+}
+.middle .jianshe_img{
+	width:100%;
+	text-align: center;
+}
+.middle .jianshe_img img{
+	width:400px;
+	height:320px;
+}
+.middle .jianshe_img hr{
+	position: relative;
+	top: -15px;
+	color: #0F7A4D;
+}
+.middle .jianshe_img p{
+	color:#898989;
+	font-size: 20px;
+}

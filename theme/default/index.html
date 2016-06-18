@@ -1,0 +1,134 @@
+{include file="inc/header.tpl"}
+<script src="./images/js/index.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="./images/css/xuehui.css" />
+<link rel="stylesheet" href="./images/js/jquery.slideBox.css" />
+    <script src="./images/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./images/js/base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./images/js/jquery.slideBox.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./images/js/myy.js" type="text/javascript" charset="utf-8"></script>
+	<div class="middle index">
+		<!--  <div class="now">
+			<span>当前位置 :</span>
+			<span class="span_now">
+				学会主页
+			</span>
+		</div>  -->
+		<ul class="ul_1">
+			<li class="li_1">
+				<div class="shad_tit">IRSE International Convention</div>
+				<div id="lunbo1" class="slideBox">
+					  <ul class="items">
+					    <!-- {foreach from=$show_list name=show item=show} -->
+  						<li><img src="{$show.show_img}" width="270" height="260"></li>
+  						<!-- {/foreach} -->
+					  </ul>
+				</div>
+			</li>
+			<li class="li_2">
+				<div class="table1" id='tab'>
+					<div class="tab1">
+						<ul>
+							<li><span><a href = "article_category.php?id=1">协会动态</a></span></li>
+							<li class="now_tab1"><span><a href = "article_category.php?id=2">通知公告</a></span></li>
+							<li><span><a href = "article_category.php?id=3">会议预告</a></span></li>
+						</ul>
+					</div>
+					<div class="tabCon">
+                    <div>
+                    	
+                 	<p class="tit1"></p>
+
+                 	<!--{foreach from=$recommend_article1 item=article}-->
+					<p class="tit1"><a href="article.php?id={$article.id}" style="color:#000000">{$article.title}</a><span class="tabDate">{$article.add_time}</span></p>
+					<!--{/foreach}-->
+					</div>
+                    <div class="now_tab1">
+					<p class="tit1"></p>
+					<!--{foreach from=$recommend_article2 item=article}-->
+					<p class="tit1"><a href="article.php?id={$article.id}"  style="color:#000000">{$article.title}</a><span class="tabDate">{$article.add_time}</span></p>
+					<!--{/foreach}-->
+					
+					</div>
+                    <div>
+					<p class="tit1"></p>
+					<!--{foreach from=$recommend_article3 item=article}-->
+					<p class="tit1"><a href="article.php?id={$article.id}" style="color:#000000">{$article.title}</a><span class="tabDate">{$article.add_time}</span></p>
+					<!--{/foreach}-->
+				
+					</div>
+				</div>
+			</li>
+			<li class="li_3">
+				<ul>
+					<li class="nav"><a href="./xuehui.php?id=14"><img src="./images/img/btn_会议首页.jpg" alt="" width="210"/></a></li>
+					<li class="nav"><a href=""><img src="./images/img/btn_会员服务.jpg" alt="" width="210"/></a></li>
+					<li class="nav"><a href=""><img src="./images/img/btn_账户管理.jpg" alt="" width="210"/></a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="ul_2">
+			<li class="li_1">
+				<div class="table1">
+					<div class="tab1">
+						<ul>
+							<li class="now_tab1"><span>学会活动</span></li>
+							<li><a href = "article_category.php?id=4">更多</a></li>
+						</ul>
+					</div>
+					<div class="tit1"></div>
+					<table>
+					<!-- {foreach from=$recommend_article4 name=one item=article} -->
+						<tr>
+							<td><div class="con_tit"><a href="{$article.url}">{$article.title}</a></div><div class="date">{$article.add_time}</div></td>
+						</tr>
+					<!--{/foreach} -->
+					</table>
+				</div>
+			</li>
+			<li class="li_2 li_1">
+				<div class="table1">
+					<div class="tab1">
+						<ul>
+							<li class="now_tab1"><span>科技动态</span></li>
+							<li><a href="article_category.php?id=5">更多</a></li>
+						</ul>
+					</div>
+					<div class="tit1"></div>
+					<table>
+					<!-- {foreach from=$recommend_article5 name=one item=article} -->
+						<tr>
+							<td><div class="con_tit"><a href="{$article.url}">{$article.title}</a></div><div class="date">{$article.add_time}</div></td>
+						</tr>
+					<!-- {/foreach} -->
+					</table>
+				</div>
+			</li>
+			<li class="li_3">
+				<div id="lunbo2" class="slideBox">
+					  <ul class="items">
+					    <!-- {foreach from=$show_list_bottom name=show item=show} -->
+  						<li><img src="{$show.show_img}" width="765px" height="260px"></li>
+  						<!-- {/foreach} -->
+					  </ul>
+				</div>
+			</li>
+			<li class="li_4" >
+				<div class="nav_you"><span><b>友情链接</b></span></div>
+				<ul >
+					<li><a href="http://www.crs.org.cn/crs/">中国铁道学会</a></li>
+					<li ><a href="" >铁路信号工程师协会总会</a></li>
+					<li><a href="http://www.bjtu.edu.cn" target="blank">北京交通大学</a></li>
+					<li><a href="http://www.china-railway.com.cn/">中国铁路总公司</a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+{include file="inc/footer.tpl"}
+</body>
+</html>

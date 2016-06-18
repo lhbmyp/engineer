@@ -1,0 +1,133 @@
+.middle .now{
+	height:30px;
+	width:100%;
+	background: #109ef9;
+	color:#FFFFFF;
+	margin-bottom: 15px;
+}
+.middle .now span{
+	font-size:16px;
+	margin-left:30px;
+	line-height: 30px;
+}
+.middle .now .span_now b{
+	font-size:16px;
+}
+.middle .now .span_now a{
+	font-size:16px;
+	color:#FFF;
+}
+
+.middle .mid_left{
+	width:240px;
+	border:1px solid #22748d;
+	background-color: #d6f4fd;
+	display: inline-block;
+}
+.middle .mid_left .left_tit{
+	height:35px;
+	background-color: #22748D;
+	text-align: center;
+	color:#FFFFFF;
+	font-size:17px;
+	line-height: 35px;
+}
+.middle .mid_left .search{
+	width:100%;
+	border-bottom: 1px solid #22748D;
+	padding-bottom: 40px;
+}
+.middle .mid_left .search ul li{
+	width:200px;
+	margin:0 auto;
+	margin-top:20px;
+	margin-left:15px;
+	line-height:35px;
+}
+.middle .mid_left .search ul li p{
+	line-height: 20px;
+	font-size:16px;
+	color:#005f7c;
+}
+.middle .mid_left .search ul li input{
+	border-radius: 5px;
+	border:none;
+	background-color: #FFFFFF;
+	height:25px;
+	width:130px;
+	margin-right:10px;
+	padding:0px 10px;
+	vertical-align: middle;
+}
+.middle .mid_left .search ul li button{
+	width:45px;
+	height:25px;
+	background-color: #89daf3;
+	border:none;
+	border-radius: 5px;
+	font-size:15px;
+	color:#005f7c;
+	vertical-align: middle;
+}
+.middle .mid_left .tit_list{
+	padding:20px 0px;
+	font-size:16px;
+}
+.middle .mid_left .tit_list .first_cat{
+	color:#005f7c;
+	padding-top: 10px;
+	padding-left:30px;
+	padding-bottom: 10px;
+	text-align:left;
+	font-size:16px;
+}
+.middle .mid_left .tit_list .first_cat a{
+	color:#005f7c;
+	font-size:16px;
+}
+.middle .mid_left .tit_list .second_cat {
+	font-size:16px;
+	color:#005f7c;
+	text-align: center;
+	padding-bottom:10px;
+}
+.middle .mid_left .tit_list .second_cat a{
+	font-size:16px;
+	color:#005f7c;
+	text-align: center;
+}
+.middle .mid_right{
+	width:73%;
+	padding-left:15px;
+	display: inline-block;
+	vertical-align: top;
+}
+.middle .mid_right table{
+	width:75%;
+	display:inline-table;
+}
+.middle .mid_right img{
+	width:20%;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 20px;
+}
+.middle .mid_right table td{
+	border:1px solid #2f996c;
+	font-size:16px;
+	color:#343434;
+	height:35px;
+}
+.middle .mid_right table .td_tit{
+	width:100px;
+	padding-left:50px;
+}
+.middle .mid_right .jieshao{
+	font-size:17px;
+}
+.middle .mid_right .con_jieshao{
+	margin-top: 20px;
+	font-size:14px;
+	color:#686868;
+	line-height: 30px;
+}

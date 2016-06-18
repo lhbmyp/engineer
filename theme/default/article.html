@@ -1,0 +1,50 @@
+{include file="inc/header.tpl"}
+    <link rel="stylesheet" href="./images/css/style.css" />
+    <link rel="stylesheet" href="./images/css/tuwen.css" />
+    <script src="./images/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./images/js/base.js" type="text/javascript" charset="utf-8"></script>
+
+	<div class="zhe"></div>
+	<div class="middle">
+		<div class="now">
+			<span>当前位置</span>
+			<span class="span_now">
+				{if $ur_here}<b>></b>{$ur_here}{/if}
+			</span>
+		</div>
+		<div class="mid_con">
+			<p class="con_tit">{$article.title}</p><br />
+			<p class="date_time">发布时间：{$article.add_time} 点击次数：{$article.click}</p>
+			<div class="con_txt">
+				{$article.content}
+				<!-- <div class="con_img">
+					<ul>
+						<li>
+							<img src="./images/img/img1.jpg" alt="" />
+							<p class="img_tit">图片标题</p>
+							<p class="img_con">图片简短说明图片简短说明图片简短说明</p>
+						</li>
+						<li>
+							<img src="./images/img/img2.jpg" alt="" />
+							<p class="img_tit">图片标题</p>
+							<p class="img_con">图片简短说明图片简短说明图片简短说明</p>
+						</li>
+						<li style="margin-right: 0px;">
+							<img src="./images/img/img3.jpg" alt="" />
+							<p class="img_tit">图片标题</p>
+							<p class="img_con">图片简短说明图片简短说明图片简短说明</p>
+						</li>
+					</ul>
+				</div>
+				<p class="fujian_p">附件下载</p> -->
+				<!-- <ul class="fujian">
+					<li><img src="./images/img/fujian.jpg" alt="" />file.doc</li>
+					<li><img src="./images/img/fujian.jpg" alt="" />file.doc</li>
+					<li><img src="./images/img/fujian.jpg" alt="" />file.doc</li>
+				</ul> -->
+			</div>
+		</div>
+	</div>
+{include file="inc/footer.tpl"}
+</body>
+</html>

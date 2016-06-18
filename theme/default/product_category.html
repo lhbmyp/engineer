@@ -1,0 +1,50 @@
+{include file="inc/header.tpl"}
+    <link rel="stylesheet" href="./images/css/style.css" />
+    <link rel="stylesheet" href="./images/css/renming.css" />
+    <script src="./images/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./images/js/base.js" type="text/javascript" charset="utf-8"></script>
+
+	<div class="zhe"></div>
+	<div class="middle">
+		<div class="now">
+			<span>当前位置 : </span>
+			<span class="span_now">
+				{$cate_info.cat_name} 
+			</span>
+		</div>
+		
+		<div class="conten">
+            <div class="con">
+            	<div class="title">{$cate_info.cat_name} </div>
+            	<div class="row-fluid">
+        			<!-- {foreach from=$product_list item=list} -->
+	        		<div class="bg_list">
+                    	<div class="photo_box">
+                        	<a href="{$list.url}">
+                        	<img src="{$list.photo}" width="135" height="150">
+                        	</a>
+                        </div>
+                        <div class="intro_box">
+                        	<div class="name_p"><p><a href="{$list.url}">{$list.name}</a></p></div>
+                            <p>{$list.title}</p>
+                            <p class="p_gray">{$list.subject}</p>
+                        </div>
+                	</div>
+                    <!-- {/foreach} -->
+					<div class="clear"></div>
+                	</div>
+       			</div>
+				<div class="clear"></div>
+				<div class="pages">
+				{include file="inc/pager.tpl"}
+				</div>
+          		<div class="clearfix"></div>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+		<div class="clear"></div>
+		
+{include file="inc/footer.tpl"}
+</body>
+</html>

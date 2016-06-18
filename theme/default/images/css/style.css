@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+* {
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	font-family:微软雅黑;
+}
+a {
+	text-decoration:none;
+	cursor:pointer;
+	text-align: center;
+	color:#000000;
+}
+ul {
+	list-style:none;
+}
+img {
+	border:0px;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:0px;
+	width:100%;
+}
+button {
+	border:none;
+}
+body {
+	width:1000px;
+	margin:0 auto;
+	overflow-x: auto;
+}
+.anow{
+	background: none repeat scroll 0 0 #109ef9;
+    color: #ffffff;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.toplang {
+	font-size: 15px;
+	color:#FFFFFF;
+}
+#nav_ul {
+	line-height: 30px;
+	list-style-type: none;
+	background:transparent;
+}
+#nav_ul a {
+	display: block;
+	width: 80px;
+	text-align:center;
+	font-size:17px;
+}
+#nav_ul a:link {
+	color:#FFF;
+	text-decoration:none;
+}
+#nav_ul a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+#nav_ul a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+#nav_ul li {
+	font-weight: bold;
+    width: 100px;
+    padding-left: 15px;
+    padding-right: 10px;
+	float: left;
+	background:transparent;
+}
+#nav_ul li ul {
+	line-height: 27px;
+	list-style-type: none;
+	text-align:left;
+	left: -999em;
+	width: 180px;
+	position: absolute;
+}
+#nav_ul li ul li {
+	float: left;
+	width: 140px;
+	background: #F6F6F6;
+}
+#nav_ul li ul a {
+	display: block;
+	width: 125px;
+	width: 140px;
+	height:auto;
+	margin:0 auto;
+	text-align:left;
+	padding-left:15px;
+	font-size:15px;
+}
+#nav_ul li ul a:link {
+	color:#666;
+	text-decoration:none;
+}
+#nav_ul li ul a:visited {
+	color:#666;
+	text-decoration:none;
+}
+#nav_ul li ul a:hover {
+	color:#F3F3F3;
+	text-decoration:none;
+	font-weight:normal;
+	background:#527AB7;
+}
+#nav_ul li:hover ul {
+	left: auto;
+	z-index:9999;
+}
+#nav_ul li.sfhover ul {
+	left: auto;
+}
+#content {
+	clear: left;
+}
+.footer {
+	background-image:url(../img/foot_bg.jpg);
+	background-repeat:repeat-x;
+	height:107px;
+}
+.footer_txt {
+	font-size:14px;
+	color:#FFFFFF;
+	text-align:center
+}
+.middle {
+	width: 1000px;
+	
+}
+/*  index.html */
+.index
+{
+height:890px;
+}
+
+.clear{
+clear:both;
+}
