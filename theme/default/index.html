@@ -115,15 +115,9 @@
 			<li class="li_4" >
 				<div class="nav_you"><span><b>友情链接</b></span></div>
 				<ul >
-					<li><a href="http://www.crs.org.cn/crs/">中国铁道学会</a></li>
-					<li ><a href="" >铁路信号工程师协会总会</a></li>
-					<li><a href="http://www.bjtu.edu.cn" target="blank">北京交通大学</a></li>
-					<li><a href="http://www.china-railway.com.cn/">中国铁路总公司</a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+					<!-- {foreach from=$nav_top_list name=friend_link item=link} -->
+					<li><a href="{$link.guide}">{$link.nav_name}</a></li>
+					<!-- {/foreach} -->
 					<li><a href=""></a></li>
 				</ul>
 			</li>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2016-05-06 16:09:50
+<?php /* Smarty version 2.6.26, created on 2016-06-18 20:38:51
          compiled from inc/footer.tpl */ ?>
 <table align="center" cellpadding="0" cellspacing="0" class="footer">
 <tr><td class="footer_txt" style="font-family:楷体;font-size:16px">地址：北京市海淀区复兴路10号　邮编：100844<br />

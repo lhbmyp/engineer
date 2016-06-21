@@ -31,6 +31,7 @@ $smarty->assign('ur_here', $_LANG['show']);
 $smarty->assign('show_list', $dou->get_show_list());
 $smarty->assign('show_list_bottom',$dou->get_show_list('bottom'));
 $smarty->assign('show_list_middle',$dou->get_show_list('middle'));
+$smarty->assign('show_list_hy_bottom',$dou->get_show_list('hy_bottom'));
 
 /**
  * +----------------------------------------------------------

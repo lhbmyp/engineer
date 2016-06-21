@@ -1,17 +1,17 @@
-<?php /* Smarty version 2.6.26, created on 2016-05-06 16:09:50
+<?php /* Smarty version 2.6.26, created on 2016-06-18 20:51:14
          compiled from index.html */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "inc/header.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-<script src="http://bjtutuan.com/engineer/theme/default/images/js/index.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" href="http://bjtutuan.com/engineer/theme/default/images/css/xuehui.css" />
-<link rel="stylesheet" href="http://bjtutuan.com/engineer/theme/default/images/js/jquery.slideBox.css" />
-    <script src="http://bjtutuan.com/engineer/theme/default/images/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://bjtutuan.com/engineer/theme/default/images/js/base.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://bjtutuan.com/engineer/theme/default/images/js/jquery.slideBox.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://bjtutuan.com/engineer/theme/default/images/js/myy.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://localhost/engineer/theme/default/images/js/index.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="http://localhost/engineer/theme/default/images/css/xuehui.css" />
+<link rel="stylesheet" href="http://localhost/engineer/theme/default/images/js/jquery.slideBox.css" />
+    <script src="http://localhost/engineer/theme/default/images/js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://localhost/engineer/theme/default/images/js/base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://localhost/engineer/theme/default/images/js/jquery.slideBox.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://localhost/engineer/theme/default/images/js/myy.js" type="text/javascript" charset="utf-8"></script>
 	<div class="middle index">
 		<!--  <div class="now">
 			<span>当前位置 :</span>
@@ -86,9 +86,9 @@ if ($this->_foreach['show']['total'] > 0):
 			</li>
 			<li class="li_3">
 				<ul>
-					<li class="nav"><a href="./xuehui.php?id=14"><img src="http://bjtutuan.com/engineer/theme/default/images/img/btn_会议首页.jpg" alt="" width="210"/></a></li>
-					<li class="nav"><a href=""><img src="http://bjtutuan.com/engineer/theme/default/images/img/btn_会员服务.jpg" alt="" width="210"/></a></li>
-					<li class="nav"><a href=""><img src="http://bjtutuan.com/engineer/theme/default/images/img/btn_账户管理.jpg" alt="" width="210"/></a></li>
+					<li class="nav"><a href="./xuehui.php?id=14"><img src="http://localhost/engineer/theme/default/images/img/btn_会议首页.jpg" alt="" width="210"/></a></li>
+					<li class="nav"><a href=""><img src="http://localhost/engineer/theme/default/images/img/btn_会员服务.jpg" alt="" width="210"/></a></li>
+					<li class="nav"><a href=""><img src="http://localhost/engineer/theme/default/images/img/btn_账户管理.jpg" alt="" width="210"/></a></li>
 				</ul>
 			</li>
 		</ul>
@@ -160,15 +160,15 @@ if ($this->_foreach['show']['total'] > 0):
 			<li class="li_4" >
 				<div class="nav_you"><span><b>友情链接</b></span></div>
 				<ul >
-					<li><a href="http://www.crs.org.cn/crs/">中国铁道学会</a></li>
-					<li ><a href="" >铁路信号工程师协会总会</a></li>
-					<li><a href="http://www.bjtu.edu.cn" target="blank">北京交通大学</a></li>
-					<li><a href="http://www.china-railway.com.cn/">中国铁路总公司</a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+					<?php $_from = $this->_tpl_vars['nav_top_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }$this->_foreach['friend_link'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['friend_link']['total'] > 0):
+    foreach ($_from as $this->_tpl_vars['link']):
+        $this->_foreach['friend_link']['iteration']++;
+?>
+					<li><a href="<?php echo $this->_tpl_vars['link']['guide']; ?>
+"><?php echo $this->_tpl_vars['link']['nav_name']; ?>
+</a></li>
+					<?php endforeach; endif; unset($_from); ?>
 					<li><a href=""></a></li>
 				</ul>
 			</li>

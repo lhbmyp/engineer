@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<table align="center" cellpadding="0" cellspacing="0" background="./images/img/top_bg.jpg" height="122">
+<table align="center" cellpadding="0" cellspacing="0" background="./images/img/top_bg1.jpg" height="122">
 <tr>
     <td rowspan="2" width="270"><img src="./images/img/logo.jpg" height="118"></td>
      <!-- align="right" -->

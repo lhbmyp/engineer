@@ -219,7 +219,7 @@ background-color:rgba(45, 149, 203, 0.53);
 	margin-right: 10px;
 }
 .middle .ul_3 .li_4 ul li a{
-	font-size:16px;
+	font-size:6px;
 	color:#09799b;
 }
 .middle .ul_3 .li_5{
@@ -247,7 +247,7 @@ background-color:rgba(45, 149, 203, 0.53);
 	height:140px;
 	font-weight: bold;
 	font-size:20px;
-	width:30px;
+	width:10px;
 	font-family: 微软雅黑;
 	background:359DD3#;
 	color:#fff;
@@ -277,6 +277,7 @@ background-color:rgba(45, 149, 203, 0.53);
 	font-size:17px;
 	line-height: 35px;
 	background:#359DD3;
+	font-weight: bold;
 }
 .middle .ul_3 .li_7 td{
 	height:55px;
@@ -286,6 +287,10 @@ background-color:rgba(45, 149, 203, 0.53);
 	font-size:16px;
 	padding:10px 0px;
 	border-bottom:1px solid #359DD3;
+}
+.middle .ul_3 .li_7 tr{
+	height:130px;
+
 }
 .middle .ul_3 .li_7 img{
 	vertical-align: top;
@@ -308,4 +313,27 @@ background-color:rgba(45, 149, 203, 0.53);
 	color:#e04848;
 	text-align: center;
 	cursor: pointer;
+}
+
+#demo {
+background: #FFF;
+overflow:hidden;
+padding-top: 10px;
+/*border: 1px dashed #CCC;*/
+width: 810px;
+height: 120px;
+}
+#demo img {
+/*border: 3px solid #F2F2F2;*/
+height: 120px;
+}
+#indemo {
+float: left;
+width: 5000%;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
 }

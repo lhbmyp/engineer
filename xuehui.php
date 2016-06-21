@@ -29,12 +29,15 @@ $id = $firewall->get_legal_id('article', $_REQUEST['id'], $_REQUEST['unique_id']
 $cat_id = $dou->get_one("SELECT cat_id FROM " . $dou->table('article') . " WHERE id = '$id'");
 $pro_cat_id = $dou->get_one("SELECT cat_id FROM " . $dou->table('product_category') . " WHERE unique_id = 'contact'");
 $parent_id = $dou->get_one("SELECT parent_id FROM " . $dou->table('article_category') . " WHERE cat_id = '" . $cat_id . "'");
+$page_id = $dou->get_one("SELECT id FROM " . $dou->table('page') . " WHERE unique_id = 'notice'");
 // if ($id == -1)
 //     $dou->dou_msg($GLOBALS['_LANG']['page_wrong'], ROOT_URL);
     
 /* 获取详细信息 */
 $query = $dou->select($dou->table('article'), '*', '`id` = \'' . $id . '\'');
 $article = $dou->fetch_array($query);
+$query1 = $dou->select($dou->table('page'), '*', '`id` = \'' . $page_id . '\'');
+$page = $dou->fetch_array($query1);
 
 // 格式化数据
 $article['add_time'] = date("Y-m-d", $article['add_time']);
@@ -117,9 +120,11 @@ $smarty->assign('nav_bottom_list', $dou->get_nav('bottom'));
 // 赋值给模板-数据
 $smarty->assign('show_list', $dou->get_show_list());
 $smarty->assign('show_list_middle', $dou->get_show_list('middle'));
+$smarty->assign('show_list_hy_bottom', $dou->get_show_list('hy_bottom'));
 $smarty->assign('link', get_link_list());
 $smarty->assign('index', $index);
 $smarty->assign('article', $article);
+$smarty->assign('page', $page);
 $smarty->assign('product_list', $product_list);
 $smarty->assign('recommend_product', $dou->get_product_list('ALL', $_CFG['home_display_product'], 'recommend'));
 $smarty->assign('recommend_article', $dou->get_article_list('ALL', $_CFG['home_display_article'], 'recommend'));

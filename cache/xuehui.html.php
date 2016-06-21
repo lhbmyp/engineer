@@ -1,13 +1,15 @@
-<?php /* Smarty version 2.6.26, created on 2016-05-06 16:41:38
+<?php /* Smarty version 2.6.26, created on 2016-06-18 20:38:51
          compiled from xuehui.html */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "inc/header.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-<link rel="stylesheet" href="http://bjtutuan.com/engineer/theme/default/images/css/xiehui.css" />
-<script src="http://bjtutuan.com/engineer/theme/default/images/js/index.js" type="text/javascript" charset="utf-8"></script>
-<script src="http://bjtutuan.com/engineer/theme/default/images/js/my.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="http://localhost/engineer/theme/default/images/css/xiehui.css" />
+<script src="http://localhost/engineer/theme/default/images/js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://localhost/engineer/theme/default/images/js/my.js" type="text/javascript" charset="utf-8"></script>
+
+
 <div class="middle">
 		<!-- <div class="now">
 			<span>当前位置 ：</span>
@@ -51,14 +53,6 @@ if ($this->_foreach['one']['total'] > 0):
 "><button style="cursor:pointer"><?php echo $this->_tpl_vars['article1']['title']; ?>
 </button></a></li>
 					<?php endforeach; endif; unset($_from); ?>
-					<!-- <li><button>会议征文</button></li>
-					<li><button>会议组委会</button></li>
-					<li><button>论文提交</button></li>
-					<li><button>参与注册</button></li>
-					<li><button>会议议程</button></li>
-					<li><button>特邀报告</button></li>
-					<li><button>交通路线</button></li>
-					<li><button>会场介绍</button></li> -->
 				</ul>
 			</li>
 
@@ -82,9 +76,12 @@ if ($this->_foreach['one']['total'] > 0):
 				</div>
 			</li>
 			<li class="li_3">
-				<div class="nav_you">通知公告(Notice)</div>
-				<span class="tit">会议网站开通公告</span><br />
-				<span class="cont">于2015年9月，中国分会会议网站将正式开通，所有会议相关消息将通过该网站挂起，敬请关注。</span>
+				<div class="nav_you"><?php echo $this->_tpl_vars['page']['page_name']; ?>
+</div>
+				<span class="tit"><?php echo $this->_tpl_vars['page']['description']; ?>
+</span><br />
+				<span class="cont"><?php echo $this->_tpl_vars['page']['content']; ?>
+</span>
 			</li>
 			<li class="li_4">
 				<div class="nav_you">联系信息(Contact)</div>
@@ -92,63 +89,74 @@ if ($this->_foreach['one']['total'] > 0):
 				<?php $_from = $this->_tpl_vars['product_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['list']):
 ?>
-					<li><img src="http://bjtutuan.com/engineer/theme/default/images/img/imgpeople.jpg" alt="" width="20" height="15" /><?php echo $this->_tpl_vars['list']['name']; ?>
+					<li><img src="http://localhost/engineer/theme/default/images/img/imgactive.png" alt="" width="20" height="15" /><?php echo $this->_tpl_vars['list']['description']; ?>
 </li>
-					<li><img src="http://bjtutuan.com/engineer/theme/default/images/img/img10.png" alt="" width="20" height="15" /><?php echo $this->_tpl_vars['list']['mail']; ?>
+					<!-- <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;activeactiveactive</li> -->
+					<li><img src="http://localhost/engineer/theme/default/images/img/imgpeople.jpg" alt="" width="20" height="15" /><?php echo $this->_tpl_vars['list']['name']; ?>
 </li>
-					<li><img src="http://bjtutuan.com/engineer/theme/default/images/img/img11.png" alt="" width="20" height="15"/><?php echo $this->_tpl_vars['list']['officephone']; ?>
+					<li><img src="http://localhost/engineer/theme/default/images/img/img10.png" alt="" width="20" height="15" /><?php echo $this->_tpl_vars['list']['mail']; ?>
 </li>
-					<li><img src="http://bjtutuan.com/engineer/theme/default/images/img/img12.png" alt="" width="20" height="15"/><?php echo $this->_tpl_vars['list']['office']; ?>
+					<li><img src="http://localhost/engineer/theme/default/images/img/img11.png" alt="" width="20" height="15"/><?php echo $this->_tpl_vars['list']['officephone']; ?>
+</li>
+					<li><img src="http://localhost/engineer/theme/default/images/img/img12.png" alt="" width="20" height="15"/><?php echo $this->_tpl_vars['list']['office']; ?>
 </li>
                     <br/>
 				<?php endforeach; endif; unset($_from); ?>
 				</ul>
 			</li>
 			<li class="li_5">
-				<img src="http://bjtutuan.com/engineer/theme/default/images/img/greatwall.jpg" alt="" width="265" height="120"/>
-				<img src="http://bjtutuan.com/engineer/theme/default/images/img/railway.jpg" alt="" width="270" height="120"/>
-				<img src="http://bjtutuan.com/engineer/theme/default/images/img/railway2.jpg" alt="" width="270" height="120"/>
+				<img src="http://localhost/engineer/theme/default/images/img/greatwall.jpg" alt="" width="265" height="120"/>
+				<img src="http://localhost/engineer/theme/default/images/img/railway.jpg" alt="" width="270" height="120"/>
+				<img src="http://localhost/engineer/theme/default/images/img/railway2.jpg" alt="" width="270" height="120"/>
 			</li>
 			<li class="li_6 li_4">
 				<table>
 				<tr>
 				<td class="li" style="border-top-left-radius: 10px;">主办单位</td>
 				<td style="width:256px;background:#FFFFFF">
-					<img src="http://bjtutuan.com/engineer/theme/default/images/img/logo.jpg" alt="" width="130" height="60"/><br /><p style="color:#000000">铁路信号工程师协会<br/>Sponsor-IRSE</p></td>
+					<img src="http://localhost/engineer/theme/default/images/img/logo.jpg" alt="" width="150" height="60"/><br /><p style="color:#000000">铁路信号工程师协会<br/>Sponsor-IRSE</p></td>
 				<td class="li">承办单位</td>
 				<td style="width:256px;background:#FFFFFF">
-					<img src="http://bjtutuan.com/engineer/theme/default/images/img/bjtu.jpg" alt="" width="70" height="70"/><br /><p style="color:#000000">北京交通大学<br/>Co-sponsor-BJTU</p></td>
-                <td style="width:256px;background:#FFFFFF;border-top-right-radius: 10px;">
-                	<img src="http://bjtutuan.com/engineer/theme/default/images/img/a.png" alt="" width="70" height="70"/><p style="color:#000000">中国铁路总公司<br/>Co-sponsor-China Rail Corp</p></td>
+					<img src="http://localhost/engineer/theme/default/images/img/bjtu.jpg" alt="" width="80" height="70"/><br /><p style="color:#000000">北京交通大学<br/>Co-sponsor-BJTU</p></td>
+           <!--      <td style="width:256px;background:#FFFFFF;border-top-right-radius: 10px;">
+                	<img src="http://localhost/engineer/theme/default/images/img/a.png" alt="" width="70" height="70"/><p style="color:#000000">中国铁路总公司<br/>Co-sponsor-China Rail Corp</p></td> -->
 			</tr></table>
 			</li>
 			<li class="li_7">
-				<div class="top_tit">赞助单位 Supporters</div>
+				<div class="top_tit">荣誉支持单位 Supporters</div>
 				<table>
 					<tr>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/a.png" alt="" width="70" height="70"/> </td>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/b.jpg" alt="" width="80" height="80"/> </td>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/c.jpg" alt="" width="100" height="90"/></td>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/d.jpg" alt="" width="110" height="90"/></td>
-					</tr>
-					<tr>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/e.jpg" alt="" width="120" height="60"/> </td>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/f.jpg" alt="" width="140" height="50"/> </td>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/g.jpg" alt="" width="160" height="60"/></td>
-						<td><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/h.jpg" alt="" width="170" height="70"/> </td>
-					</tr>
-					<tr>
-						<td style="border-bottom:0px"><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/i.jpg" alt="" width="80" height="80"/> </td>
-						<td style="border-bottom:0px"><img src="http://bjtutuan.com/engineer/theme/default/images/img/support/j.jpg" alt="" width="140" height="60"/> </td>
+						<td><img src="http://localhost/engineer/theme/default/images/img/support/n.png" alt="" width="250" height="70"/> </td>
+						<td><img src="http://localhost/engineer/theme/default/images/img/support/mm.png" alt="" width="290" height="70"/> </td>
 					</tr>
 				</table>
+				<div class="top_tit">赞助单位 Supporters</div>
+					<div id="demo">
+					<div id="indemo">
+					<div id="demo1">
+					<?php $_from = $this->_tpl_vars['show_list_hy_bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['show']):
+?>
+					<a href="<?php echo $this->_tpl_vars['show']['show_link']; ?>
+"><img src="<?php echo $this->_tpl_vars['show']['show_img']; ?>
+" border="0" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					<?php endforeach; endif; unset($_from); ?>
+
+					</div>
+					<div id="demo2"></div>
+					</div>
+					</div>
 			</li>
 			<li class="li_8 li_4">
 				<div class="nav_you">往届风采(Pre-Events)</div>
 				<ul class="list">
-					<li>Technical Convention 2015</li>
-					<li>Technical Convention 2014</li>
-					<li>Technical Convention 2013</li>
+					<?php $_from = $this->_tpl_vars['nav_bottom_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['link']):
+?>
+					<li><a href="<?php echo $this->_tpl_vars['link']['guide']; ?>
+"><?php echo $this->_tpl_vars['link']['nav_name']; ?>
+</a></li>
+					<?php endforeach; endif; unset($_from); ?>
 				</ul>
 			</li>
 		</ul>

@@ -2,6 +2,8 @@
 <link rel="stylesheet" href="./images/css/xiehui.css" />
 <script src="./images/js/index.js" type="text/javascript" charset="utf-8"></script>
 <script src="./images/js/my.js" type="text/javascript" charset="utf-8"></script>
+
+
 <div class="middle">
 		<!-- <div class="now">
 			<span>当前位置 ：</span>
@@ -34,14 +36,6 @@
 					<!-- {foreach from=$recommend_article1 name=one item=article1} -->
 					<li><a href ="xuehui.php?id={$article1.id}"><button style="cursor:pointer">{$article1.title}</button></a></li>
 					<!-- {/foreach} -->
-					<!-- <li><button>会议征文</button></li>
-					<li><button>会议组委会</button></li>
-					<li><button>论文提交</button></li>
-					<li><button>参与注册</button></li>
-					<li><button>会议议程</button></li>
-					<li><button>特邀报告</button></li>
-					<li><button>交通路线</button></li>
-					<li><button>会场介绍</button></li> -->
 				</ul>
 			</li>
 
@@ -63,14 +57,16 @@
 				</div>
 			</li>
 			<li class="li_3">
-				<div class="nav_you">通知公告(Notice)</div>
-				<span class="tit">会议网站开通公告</span><br />
-				<span class="cont">于2015年9月，中国分会会议网站将正式开通，所有会议相关消息将通过该网站挂起，敬请关注。</span>
+				<div class="nav_you">{$page.page_name}</div>
+				<span class="tit">{$page.description}</span><br />
+				<span class="cont">{$page.content}</span>
 			</li>
 			<li class="li_4">
 				<div class="nav_you">联系信息(Contact)</div>
 				<ul>
 				<!-- {foreach from=$product_list item=list} -->
+					<li><img src="./images/img/imgactive.png" alt="" width="20" height="15" />{$list.description}</li>
+					<!-- <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;activeactiveactive</li> -->
 					<li><img src="./images/img/imgpeople.jpg" alt="" width="20" height="15" />{$list.name}</li>
 					<li><img src="./images/img/img10.png" alt="" width="20" height="15" />{$list.mail}</li>
 					<li><img src="./images/img/img11.png" alt="" width="20" height="15"/>{$list.officephone}</li>
@@ -89,41 +85,41 @@
 				<tr>
 				<td class="li" style="border-top-left-radius: 10px;">主办单位</td>
 				<td style="width:256px;background:#FFFFFF">
-					<img src="./images/img/logo.jpg" alt="" width="130" height="60"/><br /><p style="color:#000000">铁路信号工程师协会<br/>Sponsor-IRSE</p></td>
+					<img src="./images/img/logo.jpg" alt="" width="150" height="60"/><br /><p style="color:#000000">铁路信号工程师协会<br/>Sponsor-IRSE</p></td>
 				<td class="li">承办单位</td>
 				<td style="width:256px;background:#FFFFFF">
-					<img src="./images/img/bjtu.jpg" alt="" width="70" height="70"/><br /><p style="color:#000000">北京交通大学<br/>Co-sponsor-BJTU</p></td>
-                <td style="width:256px;background:#FFFFFF;border-top-right-radius: 10px;">
-                	<img src="./images/img/a.png" alt="" width="70" height="70"/><p style="color:#000000">中国铁路总公司<br/>Co-sponsor-China Rail Corp</p></td>
+					<img src="./images/img/bjtu.jpg" alt="" width="80" height="70"/><br /><p style="color:#000000">北京交通大学<br/>Co-sponsor-BJTU</p></td>
+           <!--      <td style="width:256px;background:#FFFFFF;border-top-right-radius: 10px;">
+                	<img src="./images/img/a.png" alt="" width="70" height="70"/><p style="color:#000000">中国铁路总公司<br/>Co-sponsor-China Rail Corp</p></td> -->
 			</tr></table>
 			</li>
 			<li class="li_7">
-				<div class="top_tit">赞助单位 Supporters</div>
+				<div class="top_tit">荣誉支持单位 Supporters</div>
 				<table>
 					<tr>
-						<td><img src="./images/img/support/a.png" alt="" width="70" height="70"/> </td>
-						<td><img src="./images/img/support/b.jpg" alt="" width="80" height="80"/> </td>
-						<td><img src="./images/img/support/c.jpg" alt="" width="100" height="90"/></td>
-						<td><img src="./images/img/support/d.jpg" alt="" width="110" height="90"/></td>
-					</tr>
-					<tr>
-						<td><img src="./images/img/support/e.jpg" alt="" width="120" height="60"/> </td>
-						<td><img src="./images/img/support/f.jpg" alt="" width="140" height="50"/> </td>
-						<td><img src="./images/img/support/g.jpg" alt="" width="160" height="60"/></td>
-						<td><img src="./images/img/support/h.jpg" alt="" width="170" height="70"/> </td>
-					</tr>
-					<tr>
-						<td style="border-bottom:0px"><img src="./images/img/support/i.jpg" alt="" width="80" height="80"/> </td>
-						<td style="border-bottom:0px"><img src="./images/img/support/j.jpg" alt="" width="140" height="60"/> </td>
+						<td><img src="./images/img/support/n.png" alt="" width="250" height="70"/> </td>
+						<td><img src="./images/img/support/mm.png" alt="" width="290" height="70"/> </td>
 					</tr>
 				</table>
+				<div class="top_tit">赞助单位 Supporters</div>
+					<div id="demo">
+					<div id="indemo">
+					<div id="demo1">
+					<!-- {foreach from=$show_list_hy_bottom item=show} -->
+					<a href="{$show.show_link}"><img src="{$show.show_img}" border="0" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					<!-- {/foreach} -->
+
+					</div>
+					<div id="demo2"></div>
+					</div>
+					</div>
 			</li>
 			<li class="li_8 li_4">
 				<div class="nav_you">往届风采(Pre-Events)</div>
 				<ul class="list">
-					<li>Technical Convention 2015</li>
-					<li>Technical Convention 2014</li>
-					<li>Technical Convention 2013</li>
+					<!-- {foreach from=$nav_bottom_list item=link} -->
+					<li><a href="{$link.guide}">{$link.nav_name}</a></li>
+					<!-- {/foreach} -->
 				</ul>
 			</li>
 		</ul>
